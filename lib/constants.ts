@@ -13,7 +13,7 @@ const VERCEL_PRODUCTION_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
   VERCEL_PRODUCTION_URL ??
-  "https://www.justgeniusrecruiting.com";
+  "https://www.jgrtalent.com";
 
 export const TAGLINE = "We build your team while you build your company.";
 export const DESCRIPTION =
