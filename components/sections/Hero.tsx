@@ -16,8 +16,8 @@ export function Hero() {
           healthcare and SaaS companies.
         </p>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-stone-500 sm:text-lg">
-          From founder-led hiring to growing internal teams, Just Genius provides
-          experienced recruiting capacity when you need it.
+          Whether you&rsquo;re still hiring it yourself or you&rsquo;ve got a lean
+          team already stretched thin, Just Genius plugs in and gets to work.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -30,8 +30,8 @@ export function Hero() {
         </div>
 
         <p className="mt-6 text-sm text-stone-500">
-          Experienced recruiting support. Flexible engagement. No bloated agency
-          model.
+          No long-term contracts. No 20% placement fees. Just recruiting help,
+          when you need it.
         </p>
       </Container>
     </section>

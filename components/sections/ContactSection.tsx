@@ -10,7 +10,7 @@ export function ContactSection() {
           <SectionHeader
             eyebrow="Get Started"
             title="Tell us what you’re hiring for."
-            description="Share a bit about your company and roles. We’ll follow up to see if Just Genius is a fit — no obligation."
+            description="Share a bit about your company and roles, and we’ll follow up to see if Just Genius is a fit. No pressure, no obligation."
           />
           <ContactForm />
         </div>

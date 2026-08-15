@@ -10,7 +10,7 @@ export function Logo({ className, dark = false }: { className?: string; dark?: b
         dark ? "text-ivory" : "text-ink",
         className
       )}
-      aria-label="Just Genius Recruitment Solutions — home"
+      aria-label="Just Genius Recruitment Solutions home"
     >
       <span
         className="flex h-7 w-7 items-center justify-center rounded-sm bg-accent text-sm font-bold text-white"

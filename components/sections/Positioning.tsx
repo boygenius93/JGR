@@ -16,9 +16,9 @@ export function Positioning() {
           Built for the messy middle.
         </h2>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-300">
-          You&rsquo;ve outgrown founder-led recruiting, but you&rsquo;re not
-          ready — or don&rsquo;t need — to build a full internal TA function.
-          That&rsquo;s where Just Genius comes in.
+          You&rsquo;ve outgrown founder-led recruiting. You&rsquo;re just not
+          ready to build a full internal TA function, or maybe you don&rsquo;t
+          need to. That&rsquo;s where Just Genius comes in.
         </p>
 
         <div className="mt-16 flex flex-col items-stretch gap-0 sm:flex-row sm:items-center">
@@ -31,8 +31,8 @@ export function Positioning() {
 
         <div className="mt-12 max-w-2xl">
           <p className="text-sm leading-relaxed text-stone-400">
-            And when an internal team is in place, Just Genius doesn&rsquo;t just
-            step aside — we stick around for:
+            Once you&rsquo;ve got an internal team in place, we don&rsquo;t
+            disappear. We stick around for:
           </p>
           <ul className="mt-4 flex flex-wrap gap-2.5">
             {ONGOING_SUPPORT.map((item) => (

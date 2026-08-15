@@ -79,10 +79,9 @@ export function ContactForm() {
         role="status"
         className="rounded-lg border border-stone-200 bg-white p-10 text-center"
       >
-        <h3 className="text-xl text-ink">Thanks — we&rsquo;ve got it.</h3>
+        <h3 className="text-xl text-ink">Thanks, we&rsquo;ve got it.</h3>
         <p className="mt-3 text-stone-600">
-          We&rsquo;ll follow up shortly to see if Just Genius is a fit for your hiring
-          needs.
+          We&rsquo;ll be in touch soon to see if Just Genius is a fit.
         </p>
       </div>
     );

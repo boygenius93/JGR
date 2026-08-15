@@ -19,19 +19,19 @@ const DIFFERENTIATORS = [
     index: "03",
     title: "Healthcare + SaaS",
     description:
-      "We understand the different recruiting realities of both industries.",
+      "We’ve recruited on both sides: clinical hires for health systems, technical hires for SaaS teams. Different playbooks, same rigor.",
   },
   {
     index: "04",
     title: "Fractional by Design",
     description:
-      "Get experienced recruiting capacity without immediately adding full-time headcount.",
+      "Get experienced recruiting capacity without adding another full-time hire right away.",
   },
   {
     index: "05",
     title: "Quality Over Volume",
     description:
-      "Relevant candidates and thoughtful recruiting — not resume volume.",
+      "We’d rather hand you five people worth a phone call than thirty resumes that technically check the boxes.",
   },
 ];
 

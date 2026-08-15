@@ -17,7 +17,7 @@ export function WhoWeServe() {
         <SectionHeader
           eyebrow="Who We Serve"
           title="Growing companies. Ambitious teams."
-          description="We work with growing healthcare and SaaS companies across stages — from early startup teams to established organizations navigating periods of rapid hiring."
+          description="We work with growing healthcare and SaaS companies at every stage, from early startup teams to established organizations going through a hiring surge."
         />
 
         <div className="mt-10 rounded-lg border border-stone-200 bg-white px-6 py-5 sm:px-7">
@@ -42,16 +42,16 @@ export function WhoWeServe() {
             </ul>
           </div>
           <p className="mt-4 text-sm text-stone-500">
-            Seed–Series A is our sweet spot — but we support growing teams at
-            every stage, including established companies with a temporary
-            recruiting need.
+            Seed through Series A is our sweet spot. But we work with growing
+            teams at every stage, including established companies that need
+            extra recruiting support for a stretch.
           </p>
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
           <IndustryCard
             title="Healthcare & Healthtech"
-            description="Companies building the technology and services that touch clinical care and health operations."
+            description="Companies building the technology and services behind clinical care and health operations."
             examples={[
               "Digital health",
               "Care delivery",

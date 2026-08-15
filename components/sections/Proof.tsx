@@ -4,17 +4,17 @@ const PILLARS = [
   {
     title: "In-house background",
     description:
-      "Recruiting built from the inside of growing companies, not a staffing floor.",
+      "Recruiting experience built inside growing companies, not learned from a call queue.",
   },
   {
     title: "Two verticals, one recruiter",
     description:
-      "Healthcare and SaaS hiring realities are different. Both are the focus, not an afterthought.",
+      "Healthcare and SaaS hiring don’t run the same playbook, and neither one gets treated like the side gig.",
   },
   {
     title: "Full-function coverage",
     description:
-      "Clinical, technical, GTM, and G&A hiring — not one narrow lane.",
+      "Clinical, technical, GTM, G&A. Recruiting across the whole org, not just one lane.",
   },
 ];
 

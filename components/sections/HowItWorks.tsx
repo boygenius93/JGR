@@ -23,7 +23,7 @@ const STEPS = [
     index: "04",
     title: "Present",
     description:
-      "You receive curated candidates with context — not a pile of resumes.",
+      "You get curated candidates with context, not a pile of resumes lobbed over the fence.",
   },
   {
     index: "05",

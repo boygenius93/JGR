@@ -31,9 +31,8 @@ export function AboutDerek() {
                 G&amp;A functions.
               </p>
               <p>
-                I started Just Genius to help growing companies access experienced
-                recruiting support without immediately having to build a full
-                internal recruiting team.
+                I started Just Genius so growing companies could get experienced
+                recruiting help without rushing into a full internal team.
               </p>
               <p>
                 I believe great recruiting is less about sending the most resumes

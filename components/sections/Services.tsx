@@ -8,8 +8,8 @@ const SERVICES = [
     title: "Fractional Recruiting",
     headline: "Your recruiter without the full-time headcount.",
     description:
-      "A dedicated recruiting partner who works inside your process and your team — not an external vendor working around it.",
-    emphasis: "Embedded enough to make an impact. Flexible enough to scale with you.",
+      "A dedicated recruiting partner who plugs into your process and your team, instead of running searches from the outside.",
+    emphasis: "Close enough to actually move the needle. Flexible enough that you’re never stuck in a contract you’ve outgrown.",
     badge: "Flagship",
     featured: true,
     items: [
@@ -49,7 +49,7 @@ const SERVICES = [
     title: "Recruiting Strategy",
     headline: "Build the hiring engine before you build the TA team.",
     description:
-      "Recruiting process, tooling, and enablement so hiring holds up as headcount grows.",
+      "The recruiting process and tooling that keeps hiring on track as headcount grows.",
     items: [
       "Recruiting process",
       "Interview design",
