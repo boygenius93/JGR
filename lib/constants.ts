@@ -1,8 +1,19 @@
 export const SITE_NAME = "Just Genius Recruiting";
 export const SITE_SHORT_NAME = "Just Genius";
 export const SITE_INITIALS = "JGR";
+// Prefer an explicit override (set NEXT_PUBLIC_SITE_URL once the custom domain
+// is live). Otherwise fall back to the domain Vercel actually deployed this
+// build to, so absolute URLs (OG image, sitemap, canonical) never point at a
+// domain that isn't serving the site, which is what makes social platforms
+// abandon the OG image and scrape a fallback image from the page instead.
+const VERCEL_PRODUCTION_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : undefined;
+
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.justgeniusrecruiting.com";
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  VERCEL_PRODUCTION_URL ??
+  "https://www.justgeniusrecruiting.com";
 
 export const TAGLINE = "Your recruiter before you're ready for a recruiting team.";
 export const DESCRIPTION =
