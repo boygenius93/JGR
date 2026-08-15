@@ -3,7 +3,7 @@
 Marketing and lead-generation site for Just Genius, a fractional recruiting
 partner for growing healthcare and SaaS companies (Seed–Series A is the
 sweet spot, not an exclusion criterion). Positioning:
-**"Your recruiter before you're ready for a recruiting team."**
+**"We build your team while you build your company."**
 
 ## Stack
 

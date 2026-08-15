@@ -15,7 +15,7 @@ export const SITE_URL =
   VERCEL_PRODUCTION_URL ??
   "https://www.justgeniusrecruiting.com";
 
-export const TAGLINE = "Your recruiter before you're ready for a recruiting team.";
+export const TAGLINE = "We build your team while you build your company.";
 export const DESCRIPTION =
   "Fractional recruiting and talent acquisition support for growing healthcare and SaaS companies.";
 

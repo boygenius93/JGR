@@ -9,7 +9,7 @@ export function Hero() {
       <Container className="relative">
         <p className="eyebrow">Fractional Recruiting</p>
         <h1 className="mt-6 max-w-4xl text-4xl leading-[1.08] text-ink sm:text-5xl lg:text-[3.5rem]">
-          Your recruiter before you&rsquo;re ready for a recruiting team.
+          We build your team while you build your company.
         </h1>
         <p className="mt-7 max-w-2xl text-lg leading-relaxed text-stone-600 sm:text-xl">
           Fractional recruiting and talent acquisition support for growing
