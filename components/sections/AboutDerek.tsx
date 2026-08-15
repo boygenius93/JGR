@@ -7,13 +7,13 @@ export function AboutDerek() {
   return (
     <section id="about" className="py-20 sm:py-28">
       <Container>
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,240px)_1fr]">
-          <div className="relative mx-auto aspect-square w-48 overflow-hidden rounded-full border border-stone-200 bg-ivory-alt lg:mx-0 lg:w-60">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,320px)_1fr]">
+          <div className="relative mx-auto aspect-square w-56 overflow-hidden rounded-full border border-stone-200 bg-ivory-alt lg:mx-0 lg:w-full">
             <Image
               src="/images/derek.jpg"
               alt="Derek, founder of Just Genius"
               fill
-              sizes="(min-width: 1024px) 240px, 192px"
+              sizes="(min-width: 1024px) 320px, 224px"
               className="object-cover"
               priority
             />
