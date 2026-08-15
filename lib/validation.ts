@@ -1,8 +1,7 @@
 export const INDUSTRY_OPTIONS = ["Healthcare / Healthtech", "SaaS", "Other"] as const;
 export const SUPPORT_OPTIONS = [
-  "Fractional Recruiting",
-  "Specialized Search",
-  "Recruiting Strategy",
+  "Fractional Recruiting Partnership",
+  "Talent Project",
   "Not Sure Yet",
 ] as const;
 export const STAGE_OPTIONS = [

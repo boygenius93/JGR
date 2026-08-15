@@ -3,26 +3,32 @@ import { cn } from "@/lib/utils";
 
 export function PricingCard({
   name,
+  positioning,
   price,
   priceSuffix = "/ month",
-  audience,
+  bestFor,
+  capacity,
   features,
-  minimum,
+  engagement,
   featured = false,
   badge,
   ctaLabel,
   ctaHref,
+  trackId,
 }: {
   name: string;
+  positioning?: string;
   price: string;
   priceSuffix?: string;
-  audience: string;
+  bestFor: string;
+  capacity?: string;
   features: string[];
-  minimum?: string;
+  engagement?: string;
   featured?: boolean;
   badge?: string;
   ctaLabel: string;
   ctaHref: string;
+  trackId?: string;
 }) {
   return (
     <div
@@ -39,7 +45,13 @@ export function PricingCard({
         </span>
       ) : null}
       <h3 className="text-sm font-semibold uppercase tracking-[0.14em]">{name}</h3>
-      <p className={cn("mt-4 text-xs font-medium uppercase tracking-[0.1em]", featured ? "text-stone-400" : "text-stone-500")}>
+      {positioning ? (
+        <p className={cn("mt-2 text-sm", featured ? "text-stone-300" : "text-stone-600")}>
+          {positioning}
+        </p>
+      ) : null}
+
+      <p className={cn("mt-5 text-xs font-medium uppercase tracking-[0.1em]", featured ? "text-stone-400" : "text-stone-500")}>
         Starting at
       </p>
       <div className="mt-1.5 flex items-baseline gap-1.5">
@@ -48,9 +60,22 @@ export function PricingCard({
           {priceSuffix}
         </span>
       </div>
-      <p className={cn("mt-3 text-sm", featured ? "text-stone-300" : "text-stone-600")}>
-        {audience}
+
+      <p className={cn("mt-4 text-sm leading-relaxed", featured ? "text-stone-300" : "text-stone-600")}>
+        {bestFor}
       </p>
+
+      {capacity ? (
+        <p
+          className={cn(
+            "mt-3 inline-flex w-fit items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium",
+            featured ? "bg-white/10 text-stone-200" : "bg-stone-50 text-stone-600"
+          )}
+        >
+          {capacity}
+        </p>
+      ) : null}
+
       <ul className="mt-6 flex-1 space-y-3 border-t border-white/10 pt-6" style={featured ? undefined : { borderColor: "#EDEBE4" }}>
         {features.map((feature) => (
           <li key={feature} className="flex items-start gap-2.5 text-sm">
@@ -65,15 +90,18 @@ export function PricingCard({
           </li>
         ))}
       </ul>
-      {minimum ? (
+
+      {engagement ? (
         <p className={cn("mt-6 text-xs", featured ? "text-stone-400" : "text-stone-500")}>
-          {minimum}
+          {engagement}
         </p>
       ) : null}
+
       <Button
         href={ctaHref}
         variant={featured ? "inverse" : "secondary"}
         className="mt-6 w-full"
+        trackId={trackId}
       >
         {ctaLabel}
       </Button>

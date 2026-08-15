@@ -3,34 +3,34 @@ import { SectionHeader } from "@/components/SectionHeader";
 
 const ROWS = [
   {
-    label: "Flexibility",
-    agency: "Ad hoc, project by project",
-    fullTime: "Fixed, always-on capacity",
-    justGenius: "Scales up or down with hiring needs",
-  },
-  {
     label: "Engagement Model",
-    agency: "Pay per placement",
+    agency: "Transactional, often placement-based",
     fullTime: "Salary and benefits",
     justGenius: "Predictable monthly engagement",
   },
   {
     label: "Recruiting Ownership",
-    agency: "External vendor runs the search",
-    fullTime: "Owns the process, in-house",
-    justGenius: "Owns the process, working inside your team",
+    agency: "External vendor, limited ongoing ownership",
+    fullTime: "Owned in-house, requires internal hiring",
+    justGenius: "Hands-on, working inside your team",
+  },
+  {
+    label: "Capacity",
+    agency: "Limited to what you post",
+    fullTime: "Fixed; may fluctuate with hiring demand",
+    justGenius: "Flexible, scales with hiring demand",
   },
   {
     label: "Relationship",
     agency: "Transactional",
     fullTime: "Long-term, single company",
-    justGenius: "Embedded partnership",
+    justGenius: "Embedded, hiring-manager partnership",
   },
   {
-    label: "Capacity",
-    agency: "Limited to what you post",
-    fullTime: "May be underutilized in slower periods",
-    justGenius: "Right-sized to what you’re hiring for",
+    label: "Strategic Support",
+    agency: "Limited beyond the search itself",
+    fullTime: "Depends on the individual hire",
+    justGenius: "Strategic recruiting support built in",
   },
 ];
 
@@ -39,9 +39,9 @@ export function WhyFractional() {
     <section className="bg-ivory-alt py-20 sm:py-28">
       <Container>
         <SectionHeader
-          eyebrow="Why Fractional Recruiting"
-          title="Why fractional recruiting?"
-          description="You’re not ready for another full-time employee. But founder-led recruiting isn’t sustainable either. Just Genius sits between the traditional agency and the full-time recruiting hire."
+          eyebrow="Why Fractional?"
+          title="You don’t need to choose between an agency and a full-time hire."
+          description="You’re not ready for another full-time employee. But founder-led recruiting isn’t sustainable either. Just Genius sits between the traditional agency and the full-time recruiting hire, built for startups and able to scale with your hiring demand."
         />
 
         <div className="mt-12 overflow-x-auto rounded-lg border border-stone-200 bg-white">

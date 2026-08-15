@@ -9,6 +9,11 @@ const FAQS: FAQItem[] = [
       "Dedicated, part-time recruiting support instead of a full-time hire or a per-placement agency. You get consistent recruiting capacity without adding permanent headcount.",
   },
   {
+    question: "What’s the difference between Fractional Recruiting and a Talent Project?",
+    answer:
+      "Fractional Recruiting is an ongoing monthly partnership for companies with continuous hiring demand. Talent Projects are fixed-scope engagements for a specific problem, like an ATS setup or one hard-to-fill role, with no ongoing commitment required.",
+  },
+  {
     question: "Who do you work with?",
     answer:
       "Growing healthcare and SaaS companies that have outgrown founder-led hiring. Maybe they’re not ready for a full internal recruiting team yet, maybe they just don’t need one.",
@@ -31,7 +36,7 @@ const FAQS: FAQItem[] = [
   {
     question: "How long are engagements?",
     answer:
-      "Fractional plans carry a 90-day minimum. Specialized searches and strategy engagements are scoped to the work.",
+      "Fractional partnerships begin with a 90-day commitment. Talent Projects are fixed-scope and typically run days to a few weeks, depending on the project.",
   },
   {
     question: "Can you work inside our ATS?",
@@ -46,12 +51,12 @@ const FAQS: FAQItem[] = [
   {
     question: "Can you help with one difficult search?",
     answer:
-      "Yes. Specialized Search is built for a single critical role rather than an ongoing engagement.",
+      "Yes. A Talent Sourcing Sprint is built for exactly that: focused sourcing support for a single role that’s proving hard to fill, without an ongoing engagement.",
   },
   {
     question: "How does pricing work?",
     answer:
-      "Fractional plans are a predictable monthly investment. Pricing is a starting point and adjusts based on scope, seniority, and hiring volume.",
+      "Fractional partnerships start at $8,000 a month. Talent Projects are fixed-scope, starting around $1,500 to $3,500 depending on the project. Every quote is a starting point and adjusts based on scope, seniority, and hiring volume.",
   },
   {
     question: "Do you offer contingency recruiting?",
