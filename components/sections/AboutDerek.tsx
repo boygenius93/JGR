@@ -1,0 +1,44 @@
+import { Container } from "@/components/Container";
+import { Button } from "@/components/Button";
+import { CONTACT_EMAIL } from "@/lib/constants";
+
+export function AboutDerek() {
+  return (
+    <section id="about" className="py-20 sm:py-28">
+      <Container>
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,320px)_1fr]">
+          <div className="mx-auto flex aspect-square w-48 items-center justify-center rounded-full border border-stone-200 bg-ivory-alt text-4xl font-semibold text-ink lg:mx-0 lg:w-full">
+            DJ
+          </div>
+
+          <div>
+            <p className="eyebrow">About</p>
+            <h2 className="mt-4 text-3xl leading-[1.1] text-ink sm:text-4xl">
+              Hi, I&rsquo;m Derek.
+            </h2>
+            <div className="mt-6 max-w-2xl space-y-5 text-lg leading-relaxed text-stone-600">
+              <p>
+                I&rsquo;ve spent 6+ years recruiting from inside growing healthcare
+                and technology companies, hiring across clinical, technical, GTM, and
+                G&amp;A functions.
+              </p>
+              <p>
+                I started Just Genius to help early-stage companies access
+                experienced recruiting support without immediately having to build
+                a full internal TA function.
+              </p>
+              <p>
+                I believe great recruiting is less about sending the most resumes
+                and more about understanding the business, finding the right
+                people, and creating a hiring process that actually works.
+              </p>
+            </div>
+            <Button href={`mailto:${CONTACT_EMAIL}`} variant="secondary" className="mt-8" trackId="about_connect_derek">
+              Connect With Derek
+            </Button>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
