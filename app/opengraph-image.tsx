@@ -21,22 +21,13 @@ export default function OpengraphImage() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <div
-            style={{
-              display: "flex",
-              width: 36,
-              height: 36,
-              borderRadius: 6,
-              backgroundColor: "#4536D9",
-              color: "#fff",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 16,
-              fontWeight: 700,
-            }}
-          >
-            JG
-          </div>
+          <svg width="36" height="36" viewBox="0 0 64 64" fill="none">
+            <line x1="14" y1="46" x2="32" y2="28" stroke="#9C978A" strokeWidth="6" strokeLinecap="round" />
+            <line x1="32" y1="28" x2="50" y2="14" stroke="#7A6BFF" strokeWidth="6" strokeLinecap="round" />
+            <circle cx="14" cy="46" r="6" fill="#9C978A" />
+            <circle cx="32" cy="28" r="7.5" fill="#DCD9D0" />
+            <circle cx="50" cy="14" r="9.5" fill="#7A6BFF" />
+          </svg>
           <div style={{ display: "flex", fontSize: 22, color: "#FAF8F3", fontWeight: 700, letterSpacing: 1 }}>
             JUST GENIUS
           </div>

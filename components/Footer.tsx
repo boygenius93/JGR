@@ -1,6 +1,6 @@
 import { Logo } from "@/components/Logo";
 import { Container } from "@/components/Container";
-import { NAV_LINKS, CONTACT_EMAIL } from "@/lib/constants";
+import { NAV_LINKS, CONTACT_EMAIL, SITE_NAME, SITE_INITIALS } from "@/lib/constants";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -37,7 +37,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-4 border-t border-stone-200 pt-6 text-xs text-stone-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>&copy; {year} Just Genius Recruitment Solutions. All rights reserved.</p>
+          <p>&copy; {year} {SITE_NAME} ({SITE_INITIALS}). All rights reserved.</p>
           <p>Growing healthcare &amp; SaaS companies, fractional by design.</p>
         </div>
       </Container>

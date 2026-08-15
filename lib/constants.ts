@@ -1,5 +1,6 @@
-export const SITE_NAME = "Just Genius Recruitment Solutions";
+export const SITE_NAME = "Just Genius Recruiting";
 export const SITE_SHORT_NAME = "Just Genius";
+export const SITE_INITIALS = "JGR";
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.justgeniusrecruiting.com";
 

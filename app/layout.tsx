@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { AnalyticsListener } from "@/components/AnalyticsListener";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { SITE_NAME, SITE_URL, DESCRIPTION } from "@/lib/constants";
+import { SITE_NAME, SITE_URL, SITE_INITIALS, DESCRIPTION } from "@/lib/constants";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -29,10 +29,15 @@ export const metadata: Metadata = {
     "fractional talent acquisition",
     "healthcare startup recruiting",
     "SaaS startup recruiting",
+    "JGR",
   ],
-  authors: [{ name: "Just Genius Recruitment Solutions" }],
+  authors: [{ name: SITE_NAME }],
   alternates: {
     canonical: "/",
+  },
+  appleWebApp: {
+    title: SITE_INITIALS,
+    statusBarStyle: "default",
   },
   openGraph: {
     type: "website",

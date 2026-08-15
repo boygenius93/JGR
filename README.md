@@ -1,4 +1,4 @@
-# Just Genius Recruitment Solutions — Website
+# Just Genius Recruiting (JGR) — Website
 
 Marketing and lead-generation site for Just Genius, a fractional recruiting
 partner for growing healthcare and SaaS companies (Seed–Series A is the

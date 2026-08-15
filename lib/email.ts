@@ -56,7 +56,7 @@ export function buildConfirmationEmail(data: ContactFormData) {
         follow up shortly to see if Just Genius is a fit for what you&rsquo;re hiring for.
       </p>
       <p style="color:#15161A;font-size:15px;line-height:1.6;">
-        Derek<br />Just Genius Recruitment Solutions
+        Derek<br />Just Genius Recruiting
       </p>
     </div>
   `;
