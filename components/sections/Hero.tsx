@@ -12,12 +12,12 @@ export function Hero() {
           We build your team while you build your company.
         </h1>
         <p className="mt-7 max-w-2xl text-lg leading-relaxed text-stone-600 sm:text-xl">
-          Fractional recruiting and talent acquisition support for growing
-          healthcare and SaaS companies.
+          You don&rsquo;t need a recruiting team yet. You need a recruiting
+          partner who moves like one.
         </p>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-stone-500 sm:text-lg">
-          Whether you&rsquo;re still hiring it yourself or you&rsquo;ve got a lean
-          team already stretched thin, Just Genius plugs in and gets to work.
+          Just Genius plugs into your hiring process, fills your pipeline, and
+          gets people in seats.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
