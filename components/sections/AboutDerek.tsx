@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { CONTACT_EMAIL } from "@/lib/constants";
@@ -6,9 +7,16 @@ export function AboutDerek() {
   return (
     <section id="about" className="py-20 sm:py-28">
       <Container>
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,320px)_1fr]">
-          <div className="mx-auto flex aspect-square w-48 items-center justify-center rounded-full border border-stone-200 bg-ivory-alt text-4xl font-semibold text-ink lg:mx-0 lg:w-full">
-            DJ
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,240px)_1fr]">
+          <div className="relative mx-auto aspect-square w-48 overflow-hidden rounded-full border border-stone-200 bg-ivory-alt lg:mx-0 lg:w-60">
+            <Image
+              src="/images/derek.jpg"
+              alt="Derek, founder of Just Genius"
+              fill
+              sizes="(min-width: 1024px) 240px, 192px"
+              className="object-cover"
+              priority
+            />
           </div>
 
           <div>
