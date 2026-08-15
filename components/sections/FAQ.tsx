@@ -9,17 +9,17 @@ const FAQS: FAQItem[] = [
       "Dedicated, part-time recruiting support instead of a full-time hire or a per-placement agency. You get consistent recruiting capacity without adding permanent headcount.",
   },
   {
-    question: "Who is Just Genius best suited for?",
+    question: "Who do you work with?",
     answer:
-      "Companies that have outgrown founder-led hiring but aren’t ready to build an internal recruiting team — typically Seed to Series A.",
+      "Growing healthcare and SaaS companies that have outgrown founder-led hiring but aren’t ready — or don’t need — to build a full internal recruiting team.",
   },
   {
-    question: "What stage companies do you work with?",
+    question: "What company stages do you work with?",
     answer:
-      "Primarily Seed through Series A, when hiring demand tends to outpace internal recruiting capacity.",
+      "Seed through Series A is our sweet spot, when hiring demand tends to outpace internal recruiting capacity. We also support Series B, Series C, and established companies with a temporary or specialized recruiting need.",
   },
   {
-    question: "Do you work with both healthcare and SaaS?",
+    question: "Do you work with healthcare and SaaS?",
     answer:
       "Yes. Healthcare and healthtech, and SaaS, are the two primary focus areas, with recruiting approaches tailored to each.",
   },
@@ -34,7 +34,7 @@ const FAQS: FAQItem[] = [
       "Fractional plans carry a 90-day minimum. Specialized searches and strategy engagements are scoped to the work.",
   },
   {
-    question: "Do you work inside our ATS?",
+    question: "Can you work inside our ATS?",
     answer:
       "Yes. Recruiting support plugs into the tools and process you already use.",
   },
@@ -54,7 +54,7 @@ const FAQS: FAQItem[] = [
       "Fractional plans are a predictable monthly investment. Pricing is a starting point and adjusts based on scope, seniority, and hiring volume.",
   },
   {
-    question: "Do you offer traditional contingency recruiting?",
+    question: "Do you offer contingency recruiting?",
     answer:
       "No. Just Genius is built around fractional and embedded engagements rather than a pay-per-placement model.",
   },

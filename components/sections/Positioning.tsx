@@ -1,5 +1,12 @@
 import { Container } from "@/components/Container";
 
+const ONGOING_SUPPORT = [
+  "Supplemental capacity",
+  "Specialized searches",
+  "Overflow recruiting",
+  "Strategic recruiting support",
+];
+
 export function Positioning() {
   return (
     <section className="border-y border-stone-200 bg-ink py-20 text-ivory sm:py-28">
@@ -9,8 +16,9 @@ export function Positioning() {
           Built for the messy middle.
         </h2>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-300">
-          We work with companies that have outgrown founder-led hiring but
-          aren&rsquo;t ready to build a full internal recruiting organization.
+          You&rsquo;ve outgrown founder-led recruiting, but you&rsquo;re not
+          ready — or don&rsquo;t need — to build a full internal TA function.
+          That&rsquo;s where Just Genius comes in.
         </p>
 
         <div className="mt-16 flex flex-col items-stretch gap-0 sm:flex-row sm:items-center">
@@ -19,6 +27,23 @@ export function Positioning() {
           <ContinuumStage label="Just Genius" featured />
           <ContinuumArrow />
           <ContinuumStage label="Internal TA Team" subtle />
+        </div>
+
+        <div className="mt-12 max-w-2xl">
+          <p className="text-sm leading-relaxed text-stone-400">
+            And when an internal team is in place, Just Genius doesn&rsquo;t just
+            step aside — we stick around for:
+          </p>
+          <ul className="mt-4 flex flex-wrap gap-2.5">
+            {ONGOING_SUPPORT.map((item) => (
+              <li
+                key={item}
+                className="rounded-full border border-white/15 px-3.5 py-1.5 text-sm text-stone-200"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </Container>
     </section>

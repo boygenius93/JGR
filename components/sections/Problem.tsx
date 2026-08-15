@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import { SectionHeader } from "@/components/SectionHeader";
+import { Button } from "@/components/Button";
 
 const PAIN_POINTS = [
   "Too many open roles",
@@ -16,8 +17,8 @@ export function Problem() {
       <Container>
         <SectionHeader
           eyebrow="The Problem"
-          title="You’re growing. Hiring shouldn’t slow you down."
-          description="You’ve raised the capital. You’re expanding. The hiring plan is getting bigger. Suddenly recruiting becomes another job for the founder, hiring manager, or operations team."
+          title="Growing shouldn’t make hiring harder."
+          description="You’ve got more roles. More hiring managers. More pressure. And recruiting is becoming another job for people who already have one."
         />
 
         <ul className="mt-12 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
@@ -34,12 +35,14 @@ export function Problem() {
 
         <div className="mt-14 max-w-2xl border-l-2 border-accent pl-6">
           <p className="text-xl leading-relaxed text-ink">
-            You don&rsquo;t necessarily need a recruiting department.
+            The problem isn&rsquo;t always that you need a recruiting team.
           </p>
           <p className="mt-2 text-xl leading-relaxed text-ink">
-            You may just need an experienced recruiter who can plug in and get to
-            work.
+            Sometimes you just need experienced recruiting capacity.
           </p>
+          <Button href="#services" variant="secondary" className="mt-8" trackId="problem_see_how_we_help">
+            See How We Help
+          </Button>
         </div>
       </Container>
     </section>

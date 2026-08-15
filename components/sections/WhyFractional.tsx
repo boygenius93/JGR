@@ -1,30 +1,36 @@
 import { Container } from "@/components/Container";
 import { SectionHeader } from "@/components/SectionHeader";
 
-const COLUMNS = [
+const ROWS = [
   {
-    title: "Traditional Agency",
-    points: ["Transactional", "Pay per placement", "External vendor relationship"],
+    label: "Flexibility",
+    agency: "Ad hoc, project by project",
+    fullTime: "Fixed, always-on capacity",
+    justGenius: "Scales up or down with hiring needs",
   },
   {
-    title: "Full-Time Recruiter",
-    points: [
-      "Salary",
-      "Benefits",
-      "Long-term commitment",
-      "May be underutilized during slower periods",
-    ],
+    label: "Engagement Model",
+    agency: "Pay per placement",
+    fullTime: "Salary and benefits",
+    justGenius: "Predictable monthly engagement",
   },
   {
-    title: "Just Genius",
-    featured: true,
-    points: [
-      "Predictable monthly investment",
-      "Flexible capacity",
-      "Hands-on recruiting",
-      "Startup-focused",
-      "Embedded partnership",
-    ],
+    label: "Recruiting Ownership",
+    agency: "External vendor runs the search",
+    fullTime: "Owns the process, in-house",
+    justGenius: "Owns the process, working inside your team",
+  },
+  {
+    label: "Relationship",
+    agency: "Transactional",
+    fullTime: "Long-term, single company",
+    justGenius: "Embedded partnership",
+  },
+  {
+    label: "Capacity",
+    agency: "Limited to what you post",
+    fullTime: "May be underutilized in slower periods",
+    justGenius: "Right-sized to what you’re hiring for",
   },
 ];
 
@@ -34,41 +40,53 @@ export function WhyFractional() {
       <Container>
         <SectionHeader
           eyebrow="Why Fractional Recruiting"
-          title="Why hire fractional?"
-          description="You’re not ready for another full-time employee. But founder-led recruiting isn’t sustainable either."
+          title="Why fractional recruiting?"
+          description="You’re not ready for another full-time employee. But founder-led recruiting isn’t sustainable either. Just Genius sits between the traditional agency and the full-time recruiting hire."
         />
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
-          {COLUMNS.map((column) => (
-            <div
-              key={column.title}
-              className={
-                column.featured
-                  ? "rounded-lg border-2 border-ink bg-ink p-7 text-ivory"
-                  : "rounded-lg border border-stone-200 bg-white p-7"
-              }
-            >
-              <h3 className={column.featured ? "text-sm font-semibold uppercase tracking-[0.1em] text-accent-soft" : "text-sm font-semibold uppercase tracking-[0.1em] text-stone-500"}>
-                {column.title}
-              </h3>
-              <ul className="mt-5 space-y-3">
-                {column.points.map((point) => (
-                  <li
-                    key={point}
-                    className={column.featured ? "text-sm text-stone-200" : "text-sm text-stone-700"}
-                  >
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="mt-12 overflow-x-auto rounded-lg border border-stone-200 bg-white">
+          <table className="w-full min-w-[640px] border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-stone-200">
+                <th scope="col" className="p-5 text-left">
+                  <span className="sr-only">Comparison dimension</span>
+                </th>
+                <th
+                  scope="col"
+                  className="p-5 text-left text-xs font-semibold uppercase tracking-[0.1em] text-stone-500"
+                >
+                  Traditional Agency
+                </th>
+                <th
+                  scope="col"
+                  className="p-5 text-left text-xs font-semibold uppercase tracking-[0.1em] text-stone-500"
+                >
+                  Full-Time Recruiter
+                </th>
+                <th
+                  scope="col"
+                  className="bg-accent-soft p-5 text-left text-xs font-semibold uppercase tracking-[0.1em] text-accent-dim"
+                >
+                  Just Genius
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {ROWS.map((row) => (
+                <tr key={row.label} className="border-b border-stone-100 last:border-0">
+                  <th scope="row" className="p-5 text-left align-top text-sm font-semibold text-ink">
+                    {row.label}
+                  </th>
+                  <td className="p-5 align-top text-stone-600">{row.agency}</td>
+                  <td className="p-5 align-top text-stone-600">{row.fullTime}</td>
+                  <td className="bg-accent-soft/50 p-5 align-top font-medium text-ink">
+                    {row.justGenius}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
-
-        <p className="mx-auto mt-12 max-w-xl text-center text-xl leading-relaxed text-ink">
-          Just Genius sits between the traditional agency and the full-time
-          recruiting hire.
-        </p>
       </Container>
     </section>
   );

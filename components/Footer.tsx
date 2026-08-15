@@ -12,7 +12,7 @@ export function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-stone-600">
-              Fractional recruiting and talent acquisition support for Seed–Series A
+              Fractional recruiting and talent acquisition support for growing
               healthcare and SaaS companies.
             </p>
           </div>
@@ -38,7 +38,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col gap-4 border-t border-stone-200 pt-6 text-xs text-stone-500 sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; {year} Just Genius Recruitment Solutions. All rights reserved.</p>
-          <p>Seed–Series A healthcare &amp; SaaS recruiting, fractional by design.</p>
+          <p>Growing healthcare &amp; SaaS companies, fractional by design.</p>
         </div>
       </Container>
     </footer>

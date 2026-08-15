@@ -7,14 +7,17 @@ export function Hero() {
     <section className="relative overflow-hidden pb-20 pt-16 sm:pb-28 sm:pt-24">
       <HeroBackdrop />
       <Container className="relative">
-        <p className="eyebrow">Fractional Recruiting · Seed–Series A · Healthcare &amp; SaaS</p>
+        <p className="eyebrow">Fractional Recruiting</p>
         <h1 className="mt-6 max-w-4xl text-4xl leading-[1.08] text-ink sm:text-5xl lg:text-[3.5rem]">
           Your recruiter before you&rsquo;re ready for a recruiting team.
         </h1>
         <p className="mt-7 max-w-2xl text-lg leading-relaxed text-stone-600 sm:text-xl">
-          Fractional recruiting and talent acquisition support for Seed–Series A
-          healthcare and SaaS companies that are growing faster than their hiring
-          infrastructure.
+          Fractional recruiting and talent acquisition support for growing
+          healthcare and SaaS companies.
+        </p>
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-stone-500 sm:text-lg">
+          From founder-led hiring to growing internal teams, Just Genius provides
+          experienced recruiting capacity when you need it.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -27,8 +30,8 @@ export function Hero() {
         </div>
 
         <p className="mt-6 text-sm text-stone-500">
-          Experienced recruiting support. Startup-friendly engagement. No bloated
-          agency model.
+          Experienced recruiting support. Flexible engagement. No bloated agency
+          model.
         </p>
       </Container>
     </section>

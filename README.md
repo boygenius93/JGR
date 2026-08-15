@@ -1,7 +1,8 @@
 # Just Genius Recruitment Solutions — Website
 
 Marketing and lead-generation site for Just Genius, a fractional recruiting
-partner for Seed–Series A healthcare and SaaS companies. Positioning:
+partner for growing healthcare and SaaS companies (Seed–Series A is the
+sweet spot, not an exclusion criterion). Positioning:
 **"Your recruiter before you're ready for a recruiting team."**
 
 ## Stack

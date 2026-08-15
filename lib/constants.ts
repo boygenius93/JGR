@@ -5,7 +5,7 @@ export const SITE_URL =
 
 export const TAGLINE = "Your recruiter before you're ready for a recruiting team.";
 export const DESCRIPTION =
-  "Fractional recruiting and talent acquisition support for Seed–Series A healthcare and SaaS companies.";
+  "Fractional recruiting and talent acquisition support for growing healthcare and SaaS companies.";
 
 export const CONTACT_EMAIL = process.env.CONTACT_EMAIL ?? "derekj2011@gmail.com";
 export const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL ?? "";

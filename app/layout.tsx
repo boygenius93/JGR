@@ -16,19 +16,19 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Fractional Recruiting for Healthcare & SaaS Startups`,
+    default: `${SITE_NAME} | Fractional Recruiting for Growing Companies`,
     template: `%s | ${SITE_NAME}`,
   },
   description: DESCRIPTION,
   keywords: [
-    "fractional recruiter",
     "fractional recruiting",
+    "fractional recruiter",
     "healthcare recruiting",
     "SaaS recruiting",
+    "startup recruiting",
+    "fractional talent acquisition",
     "healthcare startup recruiting",
     "SaaS startup recruiting",
-    "fractional talent acquisition",
-    "startup recruiter",
   ],
   authors: [{ name: "Just Genius Recruitment Solutions" }],
   alternates: {
@@ -38,12 +38,12 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} | Fractional Recruiting for Healthcare & SaaS Startups`,
+    title: `${SITE_NAME} | Fractional Recruiting for Growing Companies`,
     description: DESCRIPTION,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} | Fractional Recruiting for Healthcare & SaaS Startups`,
+    title: `${SITE_NAME} | Fractional Recruiting for Growing Companies`,
     description: DESCRIPTION,
   },
   robots: {

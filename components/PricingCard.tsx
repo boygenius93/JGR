@@ -39,7 +39,10 @@ export function PricingCard({
         </span>
       ) : null}
       <h3 className="text-sm font-semibold uppercase tracking-[0.14em]">{name}</h3>
-      <div className="mt-4 flex items-baseline gap-1.5">
+      <p className={cn("mt-4 text-xs font-medium uppercase tracking-[0.1em]", featured ? "text-stone-400" : "text-stone-500")}>
+        Starting at
+      </p>
+      <div className="mt-1.5 flex items-baseline gap-1.5">
         <span className="text-4xl font-semibold tracking-tight">{price}</span>
         <span className={cn("text-sm", featured ? "text-stone-300" : "text-stone-500")}>
           {priceSuffix}

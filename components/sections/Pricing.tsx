@@ -63,7 +63,7 @@ export function Pricing() {
         <SectionHeader
           eyebrow="Pricing"
           title="Recruiting support that scales with you."
-          description="Pricing is a starting point. Scope varies by company, not every engagement looks identical."
+          description="Starting prices below. Scope varies by company, so not every engagement looks identical."
         />
 
         <div className="mt-12 grid grid-cols-1 items-stretch gap-6 lg:grid-cols-3">

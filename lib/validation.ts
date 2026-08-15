@@ -6,10 +6,11 @@ export const SUPPORT_OPTIONS = [
   "Not Sure Yet",
 ] as const;
 export const STAGE_OPTIONS = [
-  "Pre-seed",
   "Seed",
   "Series A",
-  "Series B+",
+  "Series B",
+  "Series C+",
+  "Growth / Established",
   "Other",
 ] as const;
 

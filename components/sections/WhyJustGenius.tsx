@@ -7,31 +7,31 @@ const DIFFERENTIATORS = [
     index: "01",
     title: "In-House Experience",
     description:
-      "We understand what happens behind the job description because we’ve worked inside growing companies.",
+      "We’ve worked inside growing companies, not just around them.",
   },
   {
     index: "02",
-    title: "Healthcare + SaaS Experience",
+    title: "Startup-Native",
     description:
-      "We understand the different hiring realities of healthcare, healthtech, and SaaS organizations.",
+      "We understand changing priorities, lean teams, and imperfect processes.",
   },
   {
     index: "03",
-    title: "Startup-Native",
+    title: "Healthcare + SaaS",
     description:
-      "We know startup priorities change quickly. Our recruiting support is designed to move with you.",
+      "We understand the different recruiting realities of both industries.",
   },
   {
     index: "04",
     title: "Fractional by Design",
     description:
-      "Get experienced recruiting capacity without immediately adding another full-time employee.",
+      "Get experienced recruiting capacity without immediately adding full-time headcount.",
   },
   {
     index: "05",
     title: "Quality Over Volume",
     description:
-      "We’d rather send five highly relevant candidates than thirty resumes that technically match a job description.",
+      "Relevant candidates and thoughtful recruiting — not resume volume.",
   },
 ];
 
@@ -41,7 +41,7 @@ export function WhyJustGenius() {
       <Container>
         <SectionHeader
           eyebrow="Why Just Genius"
-          title="Recruiters who have sat on your side of the table."
+          title="Recruiting expertise without the agency baggage."
         />
 
         <div className="mt-12 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
