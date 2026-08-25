@@ -56,7 +56,7 @@ const FAQS: FAQItem[] = [
   {
     question: "How does pricing work?",
     answer:
-      "Fractional partnerships start at $8,000 a month. Talent Projects are fixed-scope, starting around $1,500 to $3,500 depending on the project. Every quote is a starting point and adjusts based on scope, seniority, and hiring volume.",
+      "Every engagement is scoped around your hiring goals, complexity, seniority, and volume, so there isn’t a one-size number that fits every company. Let’s talk about what you’re building and we’ll recommend the right level of support and a price to match.",
   },
   {
     question: "Do you offer contingency recruiting?",

@@ -1,14 +1,18 @@
 /**
  * Structured content for the two service models: recurring Fractional
  * Recruiting partnerships and fixed-scope Talent Projects. Centralized here
- * so pricing/copy can change without touching the section markup.
+ * so copy can change without touching the section markup.
+ *
+ * Pricing is intentionally not part of this data. Engagement cost is
+ * scoped through conversation, not published on the site, so none of
+ * these records carry a rate, range, or dollar figure. See
+ * lib/internal-pricing.ts for the private pricing architecture; that
+ * file is never imported by anything client-rendered.
  */
 
 export interface FractionalPlan {
   name: string;
   positioning: string;
-  price: string;
-  priceSuffix: string;
   bestFor: string;
   capacity: string;
   features: string[];
@@ -24,8 +28,6 @@ export const FRACTIONAL_PLANS: FractionalPlan[] = [
   {
     name: "Foundation",
     positioning: "Recruiting capacity when you need it.",
-    price: "$8,000",
-    priceSuffix: "/ month",
     bestFor:
       "Companies with ongoing hiring needs that need dedicated recruiting support without a full-time recruiter.",
     capacity: "1–2 priority searches",
@@ -49,8 +51,6 @@ export const FRACTIONAL_PLANS: FractionalPlan[] = [
   {
     name: "Growth",
     positioning: "Your fractional recruiting partner.",
-    price: "$12,000",
-    priceSuffix: "/ month",
     badge: "Most Popular",
     featured: true,
     bestFor: "Companies actively scaling and hiring across multiple functions.",
@@ -76,8 +76,6 @@ export const FRACTIONAL_PLANS: FractionalPlan[] = [
   {
     name: "Embedded",
     positioning: "A recruiting function without the buildout.",
-    price: "$18,000",
-    priceSuffix: "+ / month",
     bestFor:
       "Companies that need deeper recruiting capacity or an embedded talent acquisition partner.",
     capacity: "5+ concurrent searches",
@@ -106,9 +104,6 @@ export interface TalentProject {
   name: string;
   description: string;
   deliverables: string[];
-  startingPrice: string;
-  priceRange?: string;
-  priceNote: string;
   duration?: string;
   ctaLabel: string;
   ctaHref: string;
@@ -127,8 +122,6 @@ export const TALENT_PROJECTS: TalentProject[] = [
       "Scorecards and templates",
       "Reporting and automations",
     ],
-    startingPrice: "$2,500",
-    priceNote: "Scope varies by ATS, complexity, and company size.",
     ctaLabel: "Discuss Project",
     ctaHref: "#contact",
   },
@@ -144,8 +137,6 @@ export const TALENT_PROJECTS: TalentProject[] = [
       "Interview and ATS review",
       "30/60/90-day action plan",
     ],
-    startingPrice: "$2,000",
-    priceNote: "Scope varies by team size and process complexity.",
     ctaLabel: "Discuss Project",
     ctaHref: "#contact",
   },
@@ -161,8 +152,6 @@ export const TALENT_PROJECTS: TalentProject[] = [
       "Candidate communication framework",
       "Hiring SOP",
     ],
-    startingPrice: "$3,500",
-    priceNote: "Scope varies by number of roles and hiring functions covered.",
     ctaLabel: "Discuss Project",
     ctaHref: "#contact",
   },
@@ -177,9 +166,6 @@ export const TALENT_PROJECTS: TalentProject[] = [
       "Passive candidate outreach",
       "Candidate presentation",
     ],
-    startingPrice: "$3,500",
-    priceRange: "$3,500–$6,000+",
-    priceNote: "Price depends on role complexity, seniority, market scarcity, and number of roles.",
     duration: "2–4 weeks",
     ctaLabel: "Discuss Project",
     ctaHref: "#contact",
@@ -195,8 +181,6 @@ export const TALENT_PROJECTS: TalentProject[] = [
       "Role competencies and candidate profile",
       "Scorecards and interview criteria",
     ],
-    startingPrice: "$1,500",
-    priceNote: "Price may scale based on number of roles.",
     ctaLabel: "Discuss Project",
     ctaHref: "#contact",
   },
@@ -211,8 +195,6 @@ export const TALENT_PROJECTS: TalentProject[] = [
       "Recruiting strategy and capacity",
       "Written strategy and action plan",
     ],
-    startingPrice: "$1,500",
-    priceNote: "Deliverable is a written strategy and action plan.",
     duration: "Half-day or full-day",
     ctaLabel: "Discuss Project",
     ctaHref: "#contact",

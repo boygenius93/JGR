@@ -29,6 +29,6 @@ export const NAV_LINKS = [
   { label: "Services", href: "#services" },
   { label: "Who We Help", href: "#who-we-serve" },
   { label: "Why Just Genius", href: "#why-just-genius" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Engagement Models", href: "#pricing" },
   { label: "About", href: "#about" },
 ] as const;

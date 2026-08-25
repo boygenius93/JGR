@@ -4,8 +4,6 @@ import { cn } from "@/lib/utils";
 export function PricingCard({
   name,
   positioning,
-  price,
-  priceSuffix = "/ month",
   bestFor,
   capacity,
   features,
@@ -18,8 +16,6 @@ export function PricingCard({
 }: {
   name: string;
   positioning?: string;
-  price: string;
-  priceSuffix?: string;
   bestFor: string;
   capacity?: string;
   features: string[];
@@ -51,17 +47,7 @@ export function PricingCard({
         </p>
       ) : null}
 
-      <p className={cn("mt-5 text-xs font-medium uppercase tracking-[0.1em]", featured ? "text-stone-400" : "text-stone-500")}>
-        Starting at
-      </p>
-      <div className="mt-1.5 flex items-baseline gap-1.5">
-        <span className="text-4xl font-semibold tracking-tight">{price}</span>
-        <span className={cn("text-sm", featured ? "text-stone-300" : "text-stone-500")}>
-          {priceSuffix}
-        </span>
-      </div>
-
-      <p className={cn("mt-4 text-sm leading-relaxed", featured ? "text-stone-300" : "text-stone-600")}>
+      <p className={cn("mt-5 text-sm leading-relaxed", featured ? "text-stone-300" : "text-stone-600")}>
         {bestFor}
       </p>
 

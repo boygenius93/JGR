@@ -24,16 +24,11 @@ export function TalentProjectCard({ project }: { project: TalentProject }) {
       <div className="mt-6 flex-1" />
 
       <div className="border-t border-stone-100 pt-5">
-        <div className="flex items-baseline gap-1.5">
-          <span className="text-xs font-medium uppercase tracking-[0.1em] text-stone-500">
-            Starting at
-          </span>
-          <span className="text-lg font-semibold text-ink">{project.startingPrice}</span>
-        </div>
         {project.duration ? (
-          <p className="mt-1 text-xs text-stone-500">{project.duration}</p>
+          <p className="text-xs font-medium uppercase tracking-[0.1em] text-stone-500">
+            {project.duration}
+          </p>
         ) : null}
-        <p className="mt-2 text-xs leading-relaxed text-stone-500">{project.priceNote}</p>
 
         <Button
           href={project.ctaHref}
