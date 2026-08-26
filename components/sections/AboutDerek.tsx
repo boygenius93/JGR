@@ -41,7 +41,7 @@ export function AboutDerek() {
               </p>
             </div>
             <Button href={`mailto:${CONTACT_EMAIL}`} variant="secondary" className="mt-8" trackId="about_connect_derek">
-              Connect With Derek
+              Get in Touch
             </Button>
           </div>
         </div>

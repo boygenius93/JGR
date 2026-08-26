@@ -28,7 +28,7 @@ export function CTASection() {
             size="lg"
             trackId="final_cta_email"
           >
-            Email Derek
+            Email the Team
           </Button>
         </div>
       </Container>

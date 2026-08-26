@@ -1,7 +1,7 @@
+import Link from "next/link";
 import { Container } from "@/components/Container";
 import { SectionHeader } from "@/components/SectionHeader";
 import { TalentProjectCard } from "@/components/TalentProjectCard";
-import { RecruitingAssessmentCTA } from "@/components/RecruitingAssessmentCTA";
 import { TALENT_PROJECTS } from "@/lib/services-data";
 import { PRIMARY_CTA_HREF } from "@/lib/constants";
 
@@ -62,19 +62,16 @@ export function TalentProjects() {
             When ongoing support makes sense, a project can evolve into a fractional
             partnership.
           </p>
-        </div>
-
-        <div className="mt-10">
-          <RecruitingAssessmentCTA
-            headline="Not sure which model fits?"
-            copy="Tell us what’s happening with your hiring. We’ll spend about 30 minutes understanding your goals, your challenges, and where you’re getting stuck, then help you figure out the right level of support."
-            primaryLabel="Get a Recruiting Assessment"
-            primaryHref={PRIMARY_CTA_HREF}
-            primaryTrackId="talent_projects_assessment"
-            secondaryLabel="Discuss a Project"
-            secondaryHref="#contact"
-            secondaryTrackId="talent_projects_discuss"
-          />
+          <p className="mt-5 text-center text-sm text-stone-500">
+            Not sure which model fits?{" "}
+            <Link
+              href={PRIMARY_CTA_HREF}
+              data-track="talent_projects_assessment"
+              className="font-semibold text-accent hover:text-accent-dim"
+            >
+              Get a Recruiting Assessment &rarr;
+            </Link>
+          </p>
         </div>
       </Container>
     </section>
