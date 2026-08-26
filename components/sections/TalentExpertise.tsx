@@ -30,21 +30,26 @@ export function TalentExpertise() {
           description="These are focus areas, not a claim that we’ve filled every one of these roles. Our experience spans clinical, technical, go-to-market, and operating functions."
         />
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {CATEGORIES.map((category) => (
-            <div key={category.title} className="rounded-lg border border-stone-200 bg-white p-7">
-              <h3 className="text-sm font-semibold uppercase tracking-[0.1em] text-accent">
-                {category.title}
-              </h3>
-              <ul className="mt-5 space-y-2.5">
-                {category.roles.map((role) => (
-                  <li key={role} className="text-sm text-stone-700">
-                    {role}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="mt-10 rounded-lg border border-stone-200 bg-white p-7 sm:p-8">
+          <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
+            {CATEGORIES.map((category) => (
+              <div key={category.title}>
+                <h3 className="text-xs font-semibold uppercase tracking-[0.1em] text-accent">
+                  {category.title}
+                </h3>
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {category.roles.map((role) => (
+                    <span
+                      key={role}
+                      className="rounded-full bg-stone-50 px-2.5 py-1 text-xs text-stone-600"
+                    >
+                      {role}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </Container>
     </section>

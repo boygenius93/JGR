@@ -6,11 +6,10 @@ import { WhoWeServe } from "@/components/sections/WhoWeServe";
 import { TalentExpertise } from "@/components/sections/TalentExpertise";
 import { ServicePaths } from "@/components/sections/ServicePaths";
 import { FractionalRecruiting } from "@/components/sections/FractionalRecruiting";
-import { Pricing } from "@/components/sections/Pricing";
 import { WhyFractional } from "@/components/sections/WhyFractional";
+import { Pricing } from "@/components/sections/Pricing";
 import { TalentProjects } from "@/components/sections/TalentProjects";
 import { WhyJustGenius } from "@/components/sections/WhyJustGenius";
-import { Proof } from "@/components/sections/Proof";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { FAQ } from "@/components/sections/FAQ";
 import { ContactSection } from "@/components/sections/ContactSection";
@@ -27,11 +26,10 @@ export default function HomePage() {
       <TalentExpertise />
       <ServicePaths />
       <FractionalRecruiting />
-      <Pricing />
       <WhyFractional />
+      <Pricing />
       <TalentProjects />
       <WhyJustGenius />
-      <Proof />
       <HowItWorks />
       <FAQ />
       <CTASection />
