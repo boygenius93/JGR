@@ -27,7 +27,7 @@ export function TalentExpertise() {
         <SectionHeader
           eyebrow="Talent Expertise"
           title="Recruiting across the teams that build and scale companies."
-          description="These are focus areas, not a claim that we’ve filled every one of these roles. Our experience spans clinical, technical, go-to-market, and operating functions."
+          description="Clinical and healthcare, technical, go-to-market, and G&A: recruiting support across every function a growing team needs."
         />
 
         <div className="mt-10 rounded-lg border border-stone-200 bg-white p-7 sm:p-8">
