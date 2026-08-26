@@ -14,26 +14,57 @@ import { HowItWorks } from "@/components/sections/HowItWorks";
 import { FAQ } from "@/components/sections/FAQ";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CTASection } from "@/components/CTASection";
+import { Reveal } from "@/components/Reveal";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <Problem />
-      <AboutDerek />
-      <Positioning />
-      <WhoWeServe />
-      <TalentExpertise />
-      <ServicePaths />
-      <FractionalRecruiting />
-      <WhyFractional />
-      <Pricing />
-      <TalentProjects />
-      <WhyJustGenius />
-      <HowItWorks />
-      <FAQ />
-      <CTASection />
-      <ContactSection />
+      <Reveal>
+        <Problem />
+      </Reveal>
+      <Reveal>
+        <AboutDerek />
+      </Reveal>
+      <Reveal>
+        <Positioning />
+      </Reveal>
+      <Reveal>
+        <WhoWeServe />
+      </Reveal>
+      <Reveal>
+        <TalentExpertise />
+      </Reveal>
+      <Reveal>
+        <ServicePaths />
+      </Reveal>
+      <Reveal>
+        <FractionalRecruiting />
+      </Reveal>
+      <Reveal>
+        <WhyFractional />
+      </Reveal>
+      <Reveal>
+        <Pricing />
+      </Reveal>
+      <Reveal>
+        <TalentProjects />
+      </Reveal>
+      <Reveal>
+        <WhyJustGenius />
+      </Reveal>
+      <Reveal>
+        <HowItWorks />
+      </Reveal>
+      <Reveal>
+        <FAQ />
+      </Reveal>
+      <Reveal>
+        <CTASection />
+      </Reveal>
+      <Reveal>
+        <ContactSection />
+      </Reveal>
     </>
   );
 }
