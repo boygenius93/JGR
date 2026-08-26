@@ -19,7 +19,7 @@ export const TAGLINE = "We build your team while you build your company.";
 export const DESCRIPTION =
   "Fractional recruiting and talent acquisition support for growing healthcare and SaaS companies.";
 
-export const CONTACT_EMAIL = process.env.CONTACT_EMAIL ?? "derek@jgrtalent.com";
+export const CONTACT_EMAIL = process.env.CONTACT_EMAIL ?? "team@jgrtalent.com";
 export const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL ?? "";
 
 /** Primary conversion target: the booking link when configured, otherwise the on-page contact form. */
