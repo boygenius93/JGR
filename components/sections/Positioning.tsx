@@ -12,7 +12,7 @@ export function Positioning() {
     <section className="border-y border-stone-200 bg-ink py-20 text-ivory sm:py-28">
       <Container>
         <p className="eyebrow text-accent-soft">Our Position</p>
-        <h2 className="mt-6 max-w-2xl text-3xl leading-[1.1] sm:text-4xl lg:text-[2.75rem]">
+        <h2 className="mt-6 max-w-2xl text-3xl leading-[1.1] text-ivory sm:text-4xl lg:text-[2.75rem]">
           Built for the messy middle.
         </h2>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-300">

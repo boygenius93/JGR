@@ -40,7 +40,9 @@ export function PricingCard({
           {badge}
         </span>
       ) : null}
-      <h3 className="text-sm font-semibold uppercase tracking-[0.14em]">{name}</h3>
+      <h3 className={cn("text-sm font-semibold uppercase tracking-[0.14em]", featured ? "text-ivory" : "text-ink")}>
+        {name}
+      </h3>
       {positioning ? (
         <p className={cn("mt-2 text-sm", featured ? "text-stone-300" : "text-stone-600")}>
           {positioning}
