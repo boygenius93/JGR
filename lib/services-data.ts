@@ -76,8 +76,9 @@ export const FRACTIONAL_PLANS: FractionalPlan[] = [
   {
     name: "Embedded",
     positioning: "A recruiting function without the buildout.",
+    badge: "Limited Availability",
     bestFor:
-      "Companies that need deeper recruiting capacity or an embedded talent acquisition partner.",
+      "Companies that need a full embedded recruiting function. We take on one Embedded partnership at a time, so it gets the attention a real internal hire would.",
     capacity: "5+ concurrent searches",
     features: [
       "Everything in Growth",
@@ -92,7 +93,7 @@ export const FRACTIONAL_PLANS: FractionalPlan[] = [
       "Expanded recruiting capacity",
     ],
     engagement: "Custom 3–6 month engagement",
-    ctaLabel: "Build Your Recruiting Function",
+    ctaLabel: "Check Availability",
     ctaHref: "#contact",
     trackId: "pricing_embedded",
   },

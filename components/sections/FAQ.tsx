@@ -39,6 +39,11 @@ const FAQS: FAQItem[] = [
       "Fractional partnerships begin with a 90-day commitment. Talent Projects are fixed-scope and typically run days to a few weeks, depending on the project.",
   },
   {
+    question: "How many Embedded partnerships do you take on at once?",
+    answer:
+      "Just one. Embedded is close to a full-time commitment, so we take on one Embedded partnership at a time to make sure it gets the attention a real internal hire would.",
+  },
+  {
     question: "Can you work inside our ATS?",
     answer:
       "Yes. We plug into whatever tools and process you’re already using.",
