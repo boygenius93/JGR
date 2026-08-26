@@ -81,7 +81,7 @@ export const FRACTIONAL_PLANS: FractionalPlan[] = [
     features: [
       "Everything in Growth",
       "Embedded partnership with leadership",
-      "Recruiting operations",
+      "Full ownership of recruiting tool administration and vendor relationships, including ongoing setup and maintenance",
       "Hiring strategy and workforce planning",
       "Your company’s core hiring and interview process, designed to last beyond this engagement",
       "Hands-on coaching so hiring managers can run interviews and evaluate candidates independently",
