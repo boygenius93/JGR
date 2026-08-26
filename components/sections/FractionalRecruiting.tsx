@@ -10,12 +10,14 @@ export function FractionalRecruiting() {
         </h2>
 
         <div className="mt-7 max-w-2xl space-y-4 text-lg leading-relaxed text-stone-600">
-          <p>You don’t always need another full-time employee.</p>
           <p>
-            Sometimes you need someone who can step in, understand your hiring goals, build
-            the pipeline, partner with your hiring managers, and get to work.
+            A fractional recruiter steps in and gets to work. They understand your hiring
+            goals, build the pipeline, and partner directly with your hiring managers.
           </p>
-          <p>That’s what fractional recruiting is designed to do.</p>
+          <p>
+            That’s what fractional recruiting means at Just Genius: experienced recruiting
+            capacity, built into your team.
+          </p>
         </div>
       </Container>
     </section>

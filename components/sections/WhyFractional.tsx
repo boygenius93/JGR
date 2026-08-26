@@ -40,8 +40,8 @@ export function WhyFractional() {
       <Container>
         <SectionHeader
           eyebrow="Why Fractional?"
-          title="You don’t need to choose between an agency and a full-time hire."
-          description="You’re not ready for another full-time employee. But founder-led recruiting isn’t sustainable either. Just Genius sits between the traditional agency and the full-time recruiting hire, built for startups and able to scale with your hiring demand."
+          title="A model built between an agency and a full-time hire."
+          description="Just Genius sits between a traditional agency and a full-time recruiting hire, embedded in your team like an in-house recruiter, flexible enough to scale with your hiring demand."
         />
 
         <div className="mt-12 overflow-x-auto rounded-lg border border-stone-200 bg-white">

@@ -16,9 +16,10 @@ export function Positioning() {
           Built for the messy middle.
         </h2>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-300">
-          You&rsquo;ve outgrown founder-led recruiting. You&rsquo;re just not
-          ready to build a full internal TA function, or maybe you don&rsquo;t
-          need to. That&rsquo;s where Just Genius comes in.
+          Growing companies live somewhere between founder-led hiring and a
+          fully built internal recruiting team. That&rsquo;s where Just
+          Genius operates: experienced recruiting capacity for exactly that
+          stage.
         </p>
 
         <div className="mt-16 flex flex-col items-stretch gap-0 sm:flex-row sm:items-center">
