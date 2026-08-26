@@ -1,6 +1,6 @@
 import { Logo } from "@/components/Logo";
 import { Container } from "@/components/Container";
-import { NAV_LINKS, CONTACT_EMAIL, SITE_NAME, SITE_INITIALS } from "@/lib/constants";
+import { NAV_LINKS, CONTACT_EMAIL, SITE_NAME, SITE_INITIALS, LINKEDIN_URL } from "@/lib/constants";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -29,10 +29,20 @@ export function Footer() {
             ))}
           </nav>
 
-          <div className="text-sm text-stone-600">
+          <div className="flex flex-col items-start gap-2 text-sm text-stone-600">
             <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-ink">
               {CONTACT_EMAIL}
             </a>
+            {LINKEDIN_URL ? (
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-ink"
+              >
+                LinkedIn
+              </a>
+            ) : null}
           </div>
         </div>
 

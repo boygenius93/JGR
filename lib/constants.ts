@@ -25,6 +25,10 @@ export const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL ?? "";
 /** Primary conversion target: the booking link when configured, otherwise the on-page contact form. */
 export const PRIMARY_CTA_HREF = BOOKING_URL ? BOOKING_URL : "#contact";
 
+// Optional social links. Unset by default; each renders only where a real
+// value is configured, so nothing shows a dead or placeholder link.
+export const LINKEDIN_URL = process.env.NEXT_PUBLIC_LINKEDIN_URL ?? "";
+
 export const NAV_LINKS = [
   { label: "Services", href: "#services" },
   { label: "Who We Help", href: "#who-we-serve" },

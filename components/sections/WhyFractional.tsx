@@ -44,48 +44,58 @@ export function WhyFractional() {
           description="Just Genius sits between a traditional agency and a full-time recruiting hire, embedded in your team like an in-house recruiter, flexible enough to scale with your hiring demand."
         />
 
-        <div className="mt-12 overflow-x-auto rounded-lg border border-stone-200 bg-white">
-          <table className="w-full min-w-[640px] border-collapse text-sm">
-            <thead>
-              <tr className="border-b border-stone-200">
-                <th scope="col" className="p-5 text-left">
-                  <span className="sr-only">Comparison dimension</span>
-                </th>
-                <th
-                  scope="col"
-                  className="p-5 text-left text-xs font-semibold uppercase tracking-[0.1em] text-stone-500"
-                >
-                  Traditional Agency
-                </th>
-                <th
-                  scope="col"
-                  className="p-5 text-left text-xs font-semibold uppercase tracking-[0.1em] text-stone-500"
-                >
-                  Full-Time Recruiter
-                </th>
-                <th
-                  scope="col"
-                  className="bg-accent-soft p-5 text-left text-xs font-semibold uppercase tracking-[0.1em] text-accent-dim"
-                >
-                  Just Genius
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {ROWS.map((row) => (
-                <tr key={row.label} className="border-b border-stone-100 last:border-0">
-                  <th scope="row" className="p-5 text-left align-top text-sm font-semibold text-ink">
-                    {row.label}
+        <p className="mt-8 text-sm font-medium text-accent sm:hidden">
+          Swipe to see how Just Genius compares &rarr;
+        </p>
+
+        <div className="relative mt-4 sm:mt-12">
+          <div className="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+            <table className="w-full min-w-[640px] border-collapse text-sm">
+              <thead>
+                <tr className="border-b border-stone-200">
+                  <th scope="col" className="p-5 text-left">
+                    <span className="sr-only">Comparison dimension</span>
                   </th>
-                  <td className="p-5 align-top text-stone-600">{row.agency}</td>
-                  <td className="p-5 align-top text-stone-600">{row.fullTime}</td>
-                  <td className="bg-accent-soft/50 p-5 align-top font-medium text-ink">
-                    {row.justGenius}
-                  </td>
+                  <th
+                    scope="col"
+                    className="p-5 text-left text-xs font-semibold uppercase tracking-[0.1em] text-stone-500"
+                  >
+                    Traditional Agency
+                  </th>
+                  <th
+                    scope="col"
+                    className="p-5 text-left text-xs font-semibold uppercase tracking-[0.1em] text-stone-500"
+                  >
+                    Full-Time Recruiter
+                  </th>
+                  <th
+                    scope="col"
+                    className="bg-accent-soft p-5 text-left text-xs font-semibold uppercase tracking-[0.1em] text-accent-dim"
+                  >
+                    Just Genius
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {ROWS.map((row) => (
+                  <tr key={row.label} className="border-b border-stone-100 last:border-0">
+                    <th scope="row" className="p-5 text-left align-top text-sm font-semibold text-ink">
+                      {row.label}
+                    </th>
+                    <td className="p-5 align-top text-stone-600">{row.agency}</td>
+                    <td className="p-5 align-top text-stone-600">{row.fullTime}</td>
+                    <td className="bg-accent-soft/50 p-5 align-top font-medium text-ink">
+                      {row.justGenius}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div
+            className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-white to-transparent sm:hidden"
+            aria-hidden="true"
+          />
         </div>
       </Container>
     </section>

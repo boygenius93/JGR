@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
-import { CONTACT_EMAIL } from "@/lib/constants";
+import { CONTACT_EMAIL, LINKEDIN_URL } from "@/lib/constants";
 
 export function AboutDerek() {
   return (
@@ -40,9 +40,22 @@ export function AboutDerek() {
                 people, and creating a hiring process that actually works.
               </p>
             </div>
-            <Button href={`mailto:${CONTACT_EMAIL}`} variant="secondary" className="mt-8" trackId="about_connect_derek">
-              Get in Touch
-            </Button>
+            <div className="mt-8 flex flex-wrap items-center gap-5">
+              <Button href={`mailto:${CONTACT_EMAIL}`} variant="secondary" trackId="about_connect_derek">
+                Get in Touch
+              </Button>
+              {LINKEDIN_URL ? (
+                <a
+                  href={LINKEDIN_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-track="about_linkedin"
+                  className="text-sm font-medium text-stone-600 hover:text-ink"
+                >
+                  Connect on LinkedIn
+                </a>
+              ) : null}
+            </div>
           </div>
         </div>
       </Container>
