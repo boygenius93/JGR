@@ -37,7 +37,7 @@ npm run build       # production build
 | Variable | Required | Purpose |
 | --- | --- | --- |
 | `RESEND_API_KEY` | Yes, for the contact form to send email | Server-side only — never exposed to the client. |
-| `CONTACT_EMAIL` | No (defaults to `derekj2011@gmail.com`) | Inbox that receives new lead notifications. |
+| `CONTACT_EMAIL` | No (defaults to `derek@jgrtalent.com`) | Inbox that receives new lead notifications. |
 | `RESEND_FROM_EMAIL` | No | Verified sending address in Resend (e.g. `Just Genius <hello@jgrtalent.com>`). Falls back to Resend's shared test sender, which works for development but should be replaced with a verified domain before launch. |
 | `NEXT_PUBLIC_BOOKING_URL` | No | Calendly (or similar) link. When set, primary CTAs deep-link to it instead of scrolling to the on-page contact form. |
 | `NEXT_PUBLIC_SITE_URL` | No (defaults to a placeholder) | Canonical URL used in metadata, sitemap, and Open Graph tags. Set this to the real production domain. |
