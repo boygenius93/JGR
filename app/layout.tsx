@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { AnalyticsListener } from "@/components/AnalyticsListener";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { CalendlyBadge } from "@/components/CalendlyBadge";
 import {
   SITE_NAME,
   SITE_SHORT_NAME,
@@ -115,6 +116,7 @@ export default function RootLayout({
         <Navbar />
         <main id="main-content">{children}</main>
         <Footer />
+        <CalendlyBadge />
         <AnalyticsListener />
         <Analytics />
       </body>
