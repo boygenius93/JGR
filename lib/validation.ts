@@ -1,32 +1,7 @@
-export const INDUSTRY_OPTIONS = ["Healthcare / Healthtech", "SaaS", "Other"] as const;
-export const SUPPORT_OPTIONS = [
-  "Fractional Recruiting Partnership",
-  "Talent Project",
-  "Not Sure Yet",
-] as const;
-export const STAGE_OPTIONS = [
-  "Seed",
-  "Series A",
-  "Series B",
-  "Series C+",
-  "Growth / Established",
-  "Other",
-] as const;
-
-export type Industry = (typeof INDUSTRY_OPTIONS)[number];
-export type SupportType = (typeof SUPPORT_OPTIONS)[number];
-export type Stage = (typeof STAGE_OPTIONS)[number];
-
 export interface ContactFormData {
   name: string;
   email: string;
   company: string;
-  title: string;
-  stage: string;
-  industry: string;
-  openRoles: string;
-  hiringFor: string;
-  supportType: string;
   message: string;
   /** Honeypot — real users never see or fill this field. */
   website?: string;
@@ -45,9 +20,6 @@ const MAX_LENGTHS: Partial<Record<keyof ContactFormData, number>> = {
   name: 120,
   email: 254,
   company: 160,
-  title: 120,
-  openRoles: 40,
-  hiringFor: 1000,
   message: 3000,
 };
 
@@ -61,9 +33,6 @@ export function validateContactForm(data: ContactFormData): ValidationResult {
     errors.email = "Enter a valid email address.";
   }
   if (!data.company?.trim()) errors.company = "Company is required.";
-  if (!data.industry?.trim()) errors.industry = "Select an industry.";
-  if (!data.supportType?.trim()) errors.supportType = "Select the type of support you need.";
-  if (!data.hiringFor?.trim()) errors.hiringFor = "Let us know what you're hiring for.";
 
   for (const [key, max] of Object.entries(MAX_LENGTHS) as [keyof ContactFormData, number][]) {
     const value = data[key];

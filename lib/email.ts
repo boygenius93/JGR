@@ -26,12 +26,6 @@ export function buildNotificationEmail(data: ContactFormData) {
         ${row("Name", data.name)}
         ${row("Work email", data.email)}
         ${row("Company", data.company)}
-        ${row("Title", data.title)}
-        ${row("Company stage", data.stage)}
-        ${row("Industry", data.industry)}
-        ${row("Open roles", data.openRoles)}
-        ${row("Hiring for", data.hiringFor)}
-        ${row("Support needed", data.supportType)}
       </table>
       ${
         data.message
@@ -52,11 +46,11 @@ export function buildConfirmationEmail(data: ContactFormData) {
     <div style="font-family:sans-serif;max-width:560px;margin:0 auto;">
       <p style="color:#15161A;font-size:15px;">Hi ${escapeHtml(data.name.split(" ")[0] || data.name)},</p>
       <p style="color:#15161A;font-size:15px;line-height:1.6;">
-        Thanks for the details on ${escapeHtml(data.company)}. I&rsquo;ll take a look and
-        follow up shortly to see if Just Genius is a fit for what you&rsquo;re hiring for.
+        Thanks for reaching out about ${escapeHtml(data.company)}. We&rsquo;ll take a look and
+        follow up shortly to see if Just Genius is a fit.
       </p>
       <p style="color:#15161A;font-size:15px;line-height:1.6;">
-        Derek<br />Just Genius Recruiting
+        The Just Genius Recruiting Team
       </p>
     </div>
   `;

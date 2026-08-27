@@ -10,6 +10,8 @@
  * file is never imported by anything client-rendered.
  */
 
+import { PRIMARY_CTA_HREF } from "@/lib/constants";
+
 export interface FractionalPlan {
   name: string;
   positioning: string;
@@ -45,7 +47,7 @@ export const FRACTIONAL_PLANS: FractionalPlan[] = [
     ],
     engagement: "90-day minimum",
     ctaLabel: "Let’s Talk",
-    ctaHref: "#contact",
+    ctaHref: PRIMARY_CTA_HREF,
     trackId: "pricing_foundation",
   },
   {
@@ -68,7 +70,7 @@ export const FRACTIONAL_PLANS: FractionalPlan[] = [
     ],
     engagement: "90-day minimum",
     ctaLabel: "Let’s Talk",
-    ctaHref: "#contact",
+    ctaHref: PRIMARY_CTA_HREF,
     trackId: "pricing_growth",
   },
   {
@@ -89,7 +91,7 @@ export const FRACTIONAL_PLANS: FractionalPlan[] = [
     ],
     engagement: "Custom 3–6 month engagement",
     ctaLabel: "Check Availability",
-    ctaHref: "#contact",
+    ctaHref: PRIMARY_CTA_HREF,
     trackId: "pricing_embedded",
   },
 ];
@@ -119,7 +121,7 @@ export const TALENT_PROJECTS: TalentProject[] = [
       "Reporting and automations",
     ],
     ctaLabel: "Discuss Project",
-    ctaHref: "#contact",
+    ctaHref: PRIMARY_CTA_HREF,
   },
   {
     id: "process-audit",
@@ -134,7 +136,7 @@ export const TALENT_PROJECTS: TalentProject[] = [
       "30/60/90-day action plan",
     ],
     ctaLabel: "Discuss Project",
-    ctaHref: "#contact",
+    ctaHref: PRIMARY_CTA_HREF,
   },
   {
     id: "process-design",
@@ -149,7 +151,7 @@ export const TALENT_PROJECTS: TalentProject[] = [
       "Hiring SOP",
     ],
     ctaLabel: "Discuss Project",
-    ctaHref: "#contact",
+    ctaHref: PRIMARY_CTA_HREF,
   },
   {
     id: "sourcing-sprint",
@@ -164,7 +166,7 @@ export const TALENT_PROJECTS: TalentProject[] = [
     ],
     duration: "2–4 weeks",
     ctaLabel: "Discuss Project",
-    ctaHref: "#contact",
+    ctaHref: PRIMARY_CTA_HREF,
   },
   {
     id: "job-architecture",
@@ -178,7 +180,7 @@ export const TALENT_PROJECTS: TalentProject[] = [
       "Scorecards and interview criteria",
     ],
     ctaLabel: "Discuss Project",
-    ctaHref: "#contact",
+    ctaHref: PRIMARY_CTA_HREF,
   },
   {
     id: "hiring-strategy-intensive",
@@ -193,6 +195,6 @@ export const TALENT_PROJECTS: TalentProject[] = [
     ],
     duration: "Half-day or full-day",
     ctaLabel: "Discuss Project",
-    ctaHref: "#contact",
+    ctaHref: PRIMARY_CTA_HREF,
   },
 ];

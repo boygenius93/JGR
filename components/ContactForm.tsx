@@ -3,7 +3,6 @@
 import React, { useEffect, useRef, useState, type FormEvent } from "react";
 import { track } from "@vercel/analytics";
 import { Button } from "@/components/Button";
-import { INDUSTRY_OPTIONS, SUPPORT_OPTIONS, STAGE_OPTIONS } from "@/lib/validation";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -38,12 +37,6 @@ export function ContactForm() {
       name: formData.get("name"),
       email: formData.get("email"),
       company: formData.get("company"),
-      title: formData.get("title"),
-      stage: formData.get("stage"),
-      industry: formData.get("industry"),
-      openRoles: formData.get("openRoles"),
-      hiringFor: formData.get("hiringFor"),
-      supportType: formData.get("supportType"),
       message: formData.get("message"),
       website: formData.get("website"),
       renderedAt: renderedAt.current,
@@ -102,67 +95,20 @@ export function ContactForm() {
         <Field id="email" label="Work email" required error={errors.email}>
           <input id="email" name="email" type="email" autoComplete="email" required aria-invalid={!!errors.email} className={inputClass(!!errors.email)} />
         </Field>
-        <Field id="company" label="Company" required error={errors.company}>
-          <input id="company" name="company" type="text" autoComplete="organization" required aria-invalid={!!errors.company} className={inputClass(!!errors.company)} />
-        </Field>
-        <Field id="title" label="Job title" error={errors.title}>
-          <input id="title" name="title" type="text" autoComplete="organization-title" className={inputClass(!!errors.title)} />
-        </Field>
-        <Field id="stage" label="Company stage" error={errors.stage}>
-          <select id="stage" name="stage" defaultValue="" className={inputClass(!!errors.stage)}>
-            <option value="" disabled>
-              Select stage
-            </option>
-            {STAGE_OPTIONS.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        </Field>
-        <Field id="industry" label="Industry" required error={errors.industry}>
-          <select id="industry" name="industry" defaultValue="" required aria-invalid={!!errors.industry} className={inputClass(!!errors.industry)}>
-            <option value="" disabled>
-              Select industry
-            </option>
-            {INDUSTRY_OPTIONS.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        </Field>
-        <Field id="openRoles" label="Number of open roles" error={errors.openRoles}>
-          <input id="openRoles" name="openRoles" type="text" inputMode="numeric" className={inputClass(!!errors.openRoles)} />
-        </Field>
-        <Field id="supportType" label="Type of support needed" required error={errors.supportType}>
-          <select id="supportType" name="supportType" defaultValue="" required aria-invalid={!!errors.supportType} className={inputClass(!!errors.supportType)}>
-            <option value="" disabled>
-              Select support type
-            </option>
-            {SUPPORT_OPTIONS.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        </Field>
       </div>
 
-      <Field id="hiringFor" label="What are you hiring for?" required error={errors.hiringFor}>
-        <input
-          id="hiringFor"
-          name="hiringFor"
-          type="text"
-          placeholder="e.g. VP Engineering, 2 clinical nurses, GTM team"
-          required
-          aria-invalid={!!errors.hiringFor}
-          className={inputClass(!!errors.hiringFor)}
-        />
+      <Field id="company" label="Company" required error={errors.company}>
+        <input id="company" name="company" type="text" autoComplete="organization" required aria-invalid={!!errors.company} className={inputClass(!!errors.company)} />
       </Field>
 
-      <Field id="message" label="Message" error={errors.message}>
-        <textarea id="message" name="message" rows={4} className={inputClass(!!errors.message)} />
+      <Field id="message" label="What’s on your mind?" error={errors.message}>
+        <textarea
+          id="message"
+          name="message"
+          rows={4}
+          placeholder="What you’re hiring for, where you’re stuck, or anything else worth knowing."
+          className={inputClass(!!errors.message)}
+        />
       </Field>
 
       {errorMessage ? (
@@ -172,7 +118,7 @@ export function ContactForm() {
       ) : null}
 
       <Button type="submit" size="lg" className="w-full sm:w-auto" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sending…" : "Get a Recruiting Assessment"}
+        {status === "submitting" ? "Sending…" : "Send Message"}
       </Button>
     </form>
   );
