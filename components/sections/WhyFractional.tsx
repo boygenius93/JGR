@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 const ROWS = [
   {
     label: "Engagement Model",
-    agency: "Transactional, often placement-based",
+    agency: "Pay-per-placement, transactional",
     fullTime: "Salary and benefits",
     justGenius: "Predictable monthly engagement",
   },
@@ -41,7 +41,7 @@ export function WhyFractional() {
         <SectionHeader
           eyebrow="Why Fractional?"
           title="A model built between an agency and a full-time hire."
-          description="Just Genius sits between a traditional agency and a full-time recruiting hire, embedded in your team like an in-house recruiter, flexible enough to scale with your hiring demand."
+          description="Just Genius sits between a contingency, pay-per-placement agency and a full-time recruiting hire, embedded in your team like an in-house recruiter, flexible enough to scale with your hiring demand."
         />
 
         <p className="mt-8 text-sm font-medium text-accent sm:hidden">
@@ -60,7 +60,7 @@ export function WhyFractional() {
                     scope="col"
                     className="p-5 text-left text-xs font-semibold uppercase tracking-[0.1em] text-stone-500"
                   >
-                    Traditional Agency
+                    Contingency Agency
                   </th>
                   <th
                     scope="col"
