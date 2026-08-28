@@ -44,16 +44,6 @@ const FAQS: FAQItem[] = [
       "Just one. Embedded is close to a full-time commitment, so we take on one Embedded partnership at a time to make sure it gets the attention a real internal hire would.",
   },
   {
-    question: "Can you work inside our ATS?",
-    answer:
-      "Yes. We plug into whatever tools and process you’re already using.",
-  },
-  {
-    question: "Do you handle sourcing and screening?",
-    answer:
-      "Yes. Sourcing, outreach, and screening are core to every engagement, plus candidate presentation and interview support.",
-  },
-  {
     question: "Can you help with one difficult search?",
     answer:
       "Yes. A Talent Sourcing Sprint is built for exactly that: focused sourcing support for a single role that’s proving hard to fill, without an ongoing engagement.",
