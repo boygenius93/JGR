@@ -24,7 +24,7 @@ const ROWS = [
     label: "Relationship",
     agency: "Transactional",
     fullTime: "Long-term, single company",
-    justGenius: "Embedded, hiring-manager partnership",
+    justGenius: "Ongoing, hiring-manager partnership",
   },
   {
     label: "Strategic Support",
@@ -41,7 +41,7 @@ export function WhyFractional() {
         <SectionHeader
           eyebrow="The Un-Agency Model"
           title="A model built between an agency and a full-time hire."
-          description="This is the Un-Agency approach next to the alternatives: a contingency, pay-per-placement agency and a full-time recruiting hire. Just Genius sits between them, embedded in your team like an in-house recruiter, flexible enough to scale with your hiring demand."
+          description="This is the Un-Agency approach next to the alternatives: a contingency, pay-per-placement agency and a full-time recruiting hire. Just Genius sits between them, working inside your team like an in-house recruiter, flexible enough to scale with your hiring demand."
         />
 
         <p className="mt-8 text-sm font-medium text-accent sm:hidden">

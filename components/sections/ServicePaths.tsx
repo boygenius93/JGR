@@ -18,7 +18,7 @@ export function ServicePaths() {
             headline="Your recruiter without the full-time headcount."
             description="Dedicated recruiting capacity that plugs into your team, tools, and hiring process, without requiring you to build a full internal recruiting function."
             supporting="Best for companies with ongoing hiring demand that need an experienced recruiting partner."
-            indicators={["Ongoing", "Monthly", "Embedded"]}
+            indicators={["Ongoing", "Monthly", "Flexible"]}
             ctaLabel="Explore Fractional Recruiting"
             ctaHref="#fractional-recruiting"
             trackId="service_path_fractional"
