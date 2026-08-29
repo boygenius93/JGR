@@ -11,12 +11,14 @@ const ROUTES = [
   "/contact",
 ];
 
+const LOW_PRIORITY_ROUTES = ["/privacy"];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
-  return ROUTES.map((route) => ({
+  return [...ROUTES, ...LOW_PRIORITY_ROUTES].map((route) => ({
     url: `${SITE_URL}${route}`,
     lastModified,
     changeFrequency: "monthly",
-    priority: route === "" ? 1 : 0.8,
+    priority: route === "" ? 1 : LOW_PRIORITY_ROUTES.includes(route) ? 0.3 : 0.8,
   }));
 }
