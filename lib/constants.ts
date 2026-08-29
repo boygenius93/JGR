@@ -30,6 +30,7 @@ export const PRIMARY_CTA_HREF = BOOKING_URL ? BOOKING_URL : "/contact";
 export const LINKEDIN_URL = process.env.NEXT_PUBLIC_LINKEDIN_URL ?? "";
 
 export const NAV_LINKS = [
+  { label: "Home", href: "/" },
   { label: "Fractional Recruiting", href: "/fractional-recruiting" },
   { label: "Talent Projects", href: "/talent-projects" },
   { label: "Who We Help", href: "/who-we-help" },
