@@ -39,9 +39,9 @@ export function WhyFractional() {
     <section className="bg-ivory-alt py-20 sm:py-28">
       <Container>
         <SectionHeader
-          eyebrow="Why Fractional?"
+          eyebrow="The Un-Agency Model"
           title="A model built between an agency and a full-time hire."
-          description="Just Genius sits between a contingency, pay-per-placement agency and a full-time recruiting hire, embedded in your team like an in-house recruiter, flexible enough to scale with your hiring demand."
+          description="This is the Un-Agency approach next to the alternatives: a contingency, pay-per-placement agency and a full-time recruiting hire. Just Genius sits between them, embedded in your team like an in-house recruiter, flexible enough to scale with your hiring demand."
         />
 
         <p className="mt-8 text-sm font-medium text-accent sm:hidden">

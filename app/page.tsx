@@ -24,10 +24,10 @@ export default function HomePage() {
         <Problem />
       </Reveal>
       <Reveal>
-        <AboutDerek />
+        <Positioning />
       </Reveal>
       <Reveal>
-        <Positioning />
+        <AboutDerek />
       </Reveal>
       <Reveal>
         <WhoWeServe />
