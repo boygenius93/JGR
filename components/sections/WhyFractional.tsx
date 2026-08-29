@@ -1,5 +1,7 @@
 import { Container } from "@/components/Container";
 import { SectionHeader } from "@/components/SectionHeader";
+import { BeliefGrid } from "@/components/BeliefGrid";
+import { UN_AGENCY_BELIEFS } from "@/lib/positioning-data";
 
 const ROWS = [
   {
@@ -44,7 +46,9 @@ export function WhyFractional() {
           description="This is the Un-Agency approach next to the alternatives: a contingency, pay-per-placement agency and a full-time recruiting hire. Just Genius sits between them, working inside your team like an in-house recruiter, flexible enough to scale with your hiring demand."
         />
 
-        <p className="mt-8 text-sm font-medium text-accent sm:hidden">
+        <BeliefGrid beliefs={UN_AGENCY_BELIEFS} className="mt-10" />
+
+        <p className="mt-10 text-sm font-medium text-accent sm:hidden">
           Swipe to see how Just Genius compares &rarr;
         </p>
 

@@ -1,7 +1,7 @@
 import { FractionalRecruiting } from "@/components/sections/FractionalRecruiting";
 import { WhyFractional } from "@/components/sections/WhyFractional";
+import { Testimonials } from "@/components/sections/Testimonials";
 import { Pricing } from "@/components/sections/Pricing";
-import { CTASection } from "@/components/CTASection";
 import { Reveal } from "@/components/Reveal";
 import { buildPageMetadata } from "@/lib/metadata";
 
@@ -20,10 +20,10 @@ export default function FractionalRecruitingPage() {
         <WhyFractional />
       </Reveal>
       <Reveal>
-        <Pricing />
+        <Testimonials />
       </Reveal>
       <Reveal>
-        <CTASection />
+        <Pricing />
       </Reveal>
     </>
   );

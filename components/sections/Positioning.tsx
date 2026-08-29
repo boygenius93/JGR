@@ -1,27 +1,6 @@
 import { Container } from "@/components/Container";
-
-const BELIEFS = [
-  {
-    title: "Partnership economics",
-    description:
-      "We’re paid for the engagement, not a fee every time someone accepts an offer.",
-  },
-  {
-    title: "Full pipeline visibility",
-    description:
-      "You see search progress and candidate status as it happens, not just when we’ve got someone to show you.",
-  },
-  {
-    title: "We build it, you keep it",
-    description:
-      "Scorecards, process, and market intel stay with your team after the engagement ends.",
-  },
-  {
-    title: "Capacity that flexes",
-    description:
-      "Add recruiting support when hiring accelerates, without adding headcount you’re not ready for.",
-  },
-];
+import { BeliefGrid } from "@/components/BeliefGrid";
+import { UN_AGENCY_BELIEFS } from "@/lib/positioning-data";
 
 export function Positioning() {
   return (
@@ -52,16 +31,7 @@ export function Positioning() {
           <ContinuumStage label="Internal TA Team" subtle />
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2">
-          {BELIEFS.map((belief) => (
-            <div key={belief.title} className="border-l-2 border-accent/60 pl-5">
-              <h3 className="text-base font-semibold text-ivory">{belief.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-stone-400">
-                {belief.description}
-              </p>
-            </div>
-          ))}
-        </div>
+        <BeliefGrid beliefs={UN_AGENCY_BELIEFS} dark className="mt-16" />
       </Container>
     </section>
   );

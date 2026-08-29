@@ -1,6 +1,4 @@
 import { AboutDerek } from "@/components/sections/AboutDerek";
-import { CTASection } from "@/components/CTASection";
-import { Reveal } from "@/components/Reveal";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata = buildPageMetadata({
@@ -11,12 +9,5 @@ export const metadata = buildPageMetadata({
 });
 
 export default function AboutPage() {
-  return (
-    <>
-      <AboutDerek />
-      <Reveal>
-        <CTASection />
-      </Reveal>
-    </>
-  );
+  return <AboutDerek />;
 }
