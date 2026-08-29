@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { Container } from "@/components/Container";
 import { NAV_LINKS, CONTACT_EMAIL, SITE_NAME, SITE_INITIALS, LINKEDIN_URL } from "@/lib/constants";
@@ -19,13 +20,13 @@ export function Footer() {
 
           <nav aria-label="Footer" className="grid grid-cols-2 gap-x-10 gap-y-2 sm:flex sm:gap-10">
             {NAV_LINKS.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-sm text-stone-600 hover:text-ink"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
 

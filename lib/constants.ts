@@ -22,17 +22,17 @@ export const DESCRIPTION =
 export const CONTACT_EMAIL = process.env.CONTACT_EMAIL ?? "team@jgrtalent.com";
 export const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL ?? "";
 
-/** Primary conversion target: the booking link when configured, otherwise the on-page contact form. */
-export const PRIMARY_CTA_HREF = BOOKING_URL ? BOOKING_URL : "#contact";
+/** Primary conversion target: the booking link when configured, otherwise the contact page. */
+export const PRIMARY_CTA_HREF = BOOKING_URL ? BOOKING_URL : "/contact";
 
 // Optional social links. Unset by default; each renders only where a real
 // value is configured, so nothing shows a dead or placeholder link.
 export const LINKEDIN_URL = process.env.NEXT_PUBLIC_LINKEDIN_URL ?? "";
 
 export const NAV_LINKS = [
-  { label: "Services", href: "#services" },
-  { label: "Who We Help", href: "#who-we-serve" },
-  { label: "Why Just Genius", href: "#why-just-genius" },
-  { label: "Engagement Models", href: "#pricing" },
-  { label: "About", href: "#about" },
+  { label: "Fractional Recruiting", href: "/fractional-recruiting" },
+  { label: "Talent Projects", href: "/talent-projects" },
+  { label: "Who We Help", href: "/who-we-help" },
+  { label: "About", href: "/about" },
+  { label: "FAQ", href: "/faq" },
 ] as const;

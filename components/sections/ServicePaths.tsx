@@ -20,7 +20,7 @@ export function ServicePaths() {
             supporting="Best for companies with ongoing hiring demand that need an experienced recruiting partner."
             indicators={["Ongoing", "Monthly", "Flexible"]}
             ctaLabel="Explore Fractional Recruiting"
-            ctaHref="#fractional-recruiting"
+            ctaHref="/fractional-recruiting"
             trackId="service_path_fractional"
             featured
           />
@@ -31,7 +31,7 @@ export function ServicePaths() {
             supporting="Best for companies that need a defined recruiting, hiring, or talent-acquisition project completed."
             indicators={["Fixed Scope", "Project Based", "Defined Outcome"]}
             ctaLabel="Explore Talent Projects"
-            ctaHref="#talent-projects"
+            ctaHref="/talent-projects"
             trackId="service_path_projects"
           />
         </div>
