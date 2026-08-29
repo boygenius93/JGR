@@ -59,9 +59,9 @@ const FAQS: FAQItem[] = [
       "No. Just Genius runs on fractional and embedded engagements, not a pay-per-placement model.",
   },
   {
-    question: "What happens after I submit an inquiry?",
+    question: "What happens after I reach out?",
     answer:
-      "You’ll hear back to schedule a short call and see if Just Genius is a fit for what you’re hiring for.",
+      "If you book a call, you’re on the calendar, we’ll meet then. If you send a note through the contact form instead, we’ll follow up to schedule a call and see if Just Genius is a fit.",
   },
 ];
 
