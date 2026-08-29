@@ -24,8 +24,8 @@ export function FractionalRecruiting() {
             goals, build the pipeline, and partner directly with your hiring managers.
           </p>
           <p>
-            That’s what fractional recruiting means at Just Genius: experienced recruiting
-            capacity, built into your team.
+            That’s what fractional recruiting means at Just Genius: we own the search end
+            to end, from strategy through offer, not just the introductions.
           </p>
         </div>
 

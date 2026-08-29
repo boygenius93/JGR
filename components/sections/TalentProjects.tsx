@@ -28,6 +28,7 @@ export function TalentProjects() {
           <p>Sometimes you need your hiring process rebuilt.</p>
           <p>Sometimes you need help finding candidates for one particularly difficult role.</p>
           <p className="pt-1 font-medium text-ink">That’s where Talent Projects come in.</p>
+          <p>You keep everything we build. That’s not something a placement agency offers.</p>
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
