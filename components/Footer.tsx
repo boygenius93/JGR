@@ -47,9 +47,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-stone-200 pt-6 text-xs text-stone-500 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 border-t border-stone-200 pt-6 text-xs text-stone-500">
           <p>&copy; {year} {SITE_NAME} ({SITE_INITIALS}). All rights reserved.</p>
-          <p>Growing healthcare &amp; SaaS companies, fractional by design.</p>
         </div>
       </Container>
     </footer>

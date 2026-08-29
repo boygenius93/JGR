@@ -7,7 +7,7 @@ export function Hero() {
     <section className="relative overflow-hidden pb-20 pt-16 sm:pb-28 sm:pt-24">
       <HeroBackdrop />
       <Container className="relative">
-        <p className="eyebrow">The Un-Agency Approach</p>
+        <p className="eyebrow">Fractional Recruiting</p>
         <h1 className="mt-6 max-w-4xl text-4xl leading-[1.08] text-ink sm:text-5xl lg:text-[3.5rem]">
           Recruiting, without the agency part.
         </h1>
