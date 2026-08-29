@@ -12,6 +12,7 @@ import { TalentProjects } from "@/components/sections/TalentProjects";
 import { WhyJustGenius } from "@/components/sections/WhyJustGenius";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { FAQ } from "@/components/sections/FAQ";
+import { Testimonials } from "@/components/sections/Testimonials";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CTASection } from "@/components/CTASection";
 import { Reveal } from "@/components/Reveal";
@@ -58,6 +59,9 @@ export default function HomePage() {
       </Reveal>
       <Reveal>
         <FAQ />
+      </Reveal>
+      <Reveal>
+        <Testimonials />
       </Reveal>
       <Reveal>
         <CTASection />
